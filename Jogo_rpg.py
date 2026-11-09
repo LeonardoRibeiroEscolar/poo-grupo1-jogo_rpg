@@ -19,6 +19,3 @@ idade = int(input("Qual a sua idade?\n"))
 raca = input("Qual a sua raça?\n")
 classe = int(input("Escolha uma classe: 1- Guerreiro 2- Arqueiro 3- Mago\n"))
 
-
-
-mago = Mago(45, "humano", 100)
