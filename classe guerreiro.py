@@ -7,5 +7,8 @@ class Guerreiro :
         self.vida = vida
 
 
-        if classe == 1:
+        def atacar(self):
+            print("Você atacou com sua espada!")
+            return 20
+
 
