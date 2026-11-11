@@ -47,3 +47,4 @@ class Guerreiro :
 
 
         if classe == 1:
+
