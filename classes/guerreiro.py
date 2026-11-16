@@ -1,5 +1,5 @@
 
-#Criação da classe filha "Guerreiro" e ele herda atributos da classe mãe
+# Criação da classe filha "Guerreiro" e ele herda atributos da classe mãe
 class Guerreiro :
     def __init__(self, idade, raca, classe, vida):
         super(Personagem).__init__()

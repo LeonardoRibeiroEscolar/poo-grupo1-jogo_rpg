@@ -34,9 +34,6 @@ class Personagem:
         print(f"Classe: {self.classe}")
         print(f"Vida: {self.vida}")
 
-
-
-
 # =====================================
 # Classe filha Mago
 # =====================================

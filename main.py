@@ -11,4 +11,7 @@ if resposta == 2:
     print("FIM DE JOGO")
     exit()
 
-
+from  classes import personagem
+from  classes import mago
+from  classes import arqueiro
+from  classes import guerreiro
