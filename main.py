@@ -1,5 +1,7 @@
-resposta = 0
 
+#Criação do menu principal(iniciar o jogo e sair)
+resposta = 0
+print("===== BEM VINDO AO JOGO =====")
 print(" pressione 1- iniciar")
 print(" pressione 2- sair")
 

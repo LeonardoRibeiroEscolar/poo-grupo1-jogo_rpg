@@ -1,3 +1,5 @@
+
+#Criação da classe mãe e definição de seus atributos
 class Personagem:
     def __init__(self, idade, raca, classe):
         self.idade = idade
@@ -5,7 +7,7 @@ class Personagem:
         self.classe = classe
 
 
-    # Criação de personagem
+# Criação de personagem(através de perguntas print/input)
     print("====== Criação de personagem ======\n")
 
     nome = input("Qual será seu nome?\n")
@@ -19,7 +21,7 @@ class Personagem:
 
     classe = int(input("Digite o número da classe: "))
 
-    # Escolha da classe
+    # Escolha da classe(definição de qual classe filha será usada pelo usuario)
     if classe == 1:
         personagem = Guerreiro(idade, raca, "Guerreiro", 120)
 
@@ -36,7 +38,7 @@ class Personagem:
         print("Classe inválida!")
         exit()
 
-    # Informações do personagem
+    # Informações do personagem aparecem na tela
 
 
 print("\n====== Personagem criado ======")
@@ -52,7 +54,7 @@ if isinstance(Personagem, Mago):
 if isinstance(Personagem, Arqueiro):
     print(f"Flechas: {Personagem.flechas}")
 
-# Início da aventura
+# Início da aventura(combate com inimigos e exploração, inimigom é uma variavel)
 print("\nVocê acorda...")
 print("Você se encontra em frente a uma masmorra...")
 
@@ -132,7 +134,7 @@ if entrar == "sim":
             if isinstance(Personagem, Arqueiro):
                 print(f"Flechas: {Personagem.flechas}")
 
-
+#fim de jogo e opções invalidas
         elif escolha == "3":
             print("\nVocê fugiu da masmorra!")
             break
