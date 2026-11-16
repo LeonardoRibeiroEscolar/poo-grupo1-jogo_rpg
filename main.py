@@ -8,3 +8,4 @@ print("\n\n\n")
 if resposta == 2:
     print("FIM DE JOGO")
     exit()
+
