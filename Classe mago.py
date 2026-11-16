@@ -16,4 +16,5 @@ class Mago:
         else:
             print("Mana insuficiente!")
             return 0
+            
 
