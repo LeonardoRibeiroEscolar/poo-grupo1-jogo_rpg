@@ -1,3 +1,4 @@
+from personagem import Personagem
 # Criação da classe filha "Arqueiro" e ele herda atributos da classe mãe
 class Arqueiro(Personagem):
     def __init__(self, nome, idade, raca):

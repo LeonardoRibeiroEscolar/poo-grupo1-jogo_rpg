@@ -1,17 +1,18 @@
+import os
+from personagem import main as iniciar_jogo
 
-#Criação do menu principal(iniciar o jogo e sair)
-resposta = 0
 print("===== BEM VINDO AO JOGO =====")
 print(" pressione 1- iniciar")
 print(" pressione 2- sair")
 
-int(input(resposta))
-print("\n\n\n")
-if resposta == 2:
+resposta = input(">> ")
+
+if resposta == "1":
+    os.system("cls")
+    iniciar_jogo()  # Executa toda a função main() do arquivo personagem.py
+
+elif resposta == "2":
     print("FIM DE JOGO")
     exit()
-
-from  classes import personagem
-from  classes import mago
-from  classes import arqueiro
-from  classes import guerreiro
+else:
+    print("Opção inválida!")

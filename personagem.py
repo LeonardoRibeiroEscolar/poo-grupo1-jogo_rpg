@@ -35,90 +35,6 @@ class Personagem:
         print(f"Vida: {self.vida}")
 
 # =====================================
-# Classe filha Mago
-# =====================================
-
-
-class Mago(Personagem):
-    def __init__(self, nome, idade, raca):
-        super().__init__(nome, idade, raca, "Mago", 100)
-        self.__mana = 100
-
-
-    @property
-    def mana(self):
-        return self.__mana
-
-
-    def atacar(self):
-        if self.__mana >= 10:
-            self.__mana -= 10
-            print("Você lançou uma bola de fogo!")
-            return 25
-        else:
-            print("Mana insuficiente!")
-            return 0
-
-
-    def mostrar_status(self):
-        super().mostrar_status()
-        print(f"Mana: {self.mana}")
-
-
-
-
-# =====================================
-# Classe filha Guerreiro
-# =====================================
-
-
-class Guerreiro(Personagem):
-    def __init__(self, nome, idade, raca):
-        super().__init__(nome, idade, raca, "Guerreiro", 120)
-
-
-    def atacar(self):
-        print("Você atacou com sua espada!")
-        return 20
-
-
-
-
-# =====================================
-# Classe filha Arqueiro
-# =====================================
-
-
-class Arqueiro(Personagem):
-    def __init__(self, nome, idade, raca):
-        super().__init__(nome, idade, raca, "Arqueiro", 100)
-        self.__flechas = 30
-
-
-    @property
-    def flechas(self):
-        return self.__flechas
-
-
-    def atacar(self):
-        if self.__flechas > 0:
-            self.__flechas -= 1
-            print("Você disparou uma flecha!")
-            print(f"Flechas restantes: {self.flechas}")
-            return 20
-        else:
-            print("Você está sem flechas!")
-            return 0
-
-
-    def mostrar_status(self):
-        super().mostrar_status()
-        print(f"Flechas: {self.flechas}")
-
-
-
-
-# =====================================
 # Classe Gerenciadora de personagens
 # =====================================
 
@@ -127,9 +43,10 @@ class GerenciadorPersonagens:
     def __init__(self):
         self.__personagens = []
 
-
     def criar_personagem(self, nome, idade, raca, classe):
-
+        from classes.guerreiro import Guerreiro
+        from classes.arqueiro import Arqueiro
+        from classes.mago import Mago
 
         if classe == 1:
             personagem = Guerreiro(nome, idade, raca)

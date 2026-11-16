@@ -1,7 +1,8 @@
+from personagem import Personagem
 # Criação da classe filha "Mago" e ele herda atributos da classe mãe
 class Mago(Personagem):
     def __init__(self, nome, idade, raca):
-        super(Personagem).__init__(nome, idade, raca, "Mago", 100)
+        super().__init__(nome, idade, raca, "Mago", 100)
         self.__mana = 100
 
 
