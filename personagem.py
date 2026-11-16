@@ -145,6 +145,7 @@ if entrar == "sim":
     if Personagem.vida <= 0:
         print("\nVocê morreu!")
         print("Fim de jogo!")
+        
 
 
 else:
